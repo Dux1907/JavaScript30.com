@@ -11,6 +11,11 @@
     background-size: cover;
 }
 
+.inprogress{
+    transform:scale(1.2);
+    border:5px solid black !important;
+    color:black !important;
+}
 .key {
     height: 90px;
     width: 90px;
@@ -24,7 +29,8 @@
     font-weight: 900;
     border: 3px solid orange;
     box-shadow: orange 0px -30px 36px -28px inset;
-
+    border-radius: 5%;
+    transition: all .6s;
 }
 
 .row {
