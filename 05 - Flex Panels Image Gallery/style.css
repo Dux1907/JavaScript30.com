@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.panel1 {
+    background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500);
+}
+
+.panel2 {
+    background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+}
+
+.panel3 {
+    background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d);
+}
+
+.panel4 {
+    background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500);
+}
+
+.panel5 {
+    background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
+}
+
+.col-12 > * {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: all 1s;
+}
+.row {
+    min-height: 100vh;
+}
+
+.col-12 {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+p {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.panel:nth-child(even) {
+    color: white;
+}
+
+.panel.open {
+    flex: 6;
+    font-size: 5rem;
+}
+
+.panel.open-active {
+    font-size: 100rem;
+}
+
+.panel > *:first-child {
+    transform: translateY(-100%);
+    visibility:hidden;
+}
+
+
+.panel.open-active > *:first-child {
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+.panel > *:last-child {
+    transform: translateY(100%);
+    visibility:hidden;
+}
+
+.panel.open-active > *:last-child {
+    transform: translateY(0%);
+    visibility: visible;
+}
